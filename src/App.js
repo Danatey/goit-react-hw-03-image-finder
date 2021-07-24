@@ -1,6 +1,7 @@
 import { Component } from "react";
 
 import getAPI from "./Components/API";
+import Searchbar from "./Components/Searchbar";
 
 class App extends Component {
   state = {};
@@ -10,7 +11,11 @@ class App extends Component {
   }
 
   render() {
-    return <div></div>;
+    return (
+      <div className="app-container">
+        <Searchbar onSubmit />
+      </div>
+    );
   }
 }
 
