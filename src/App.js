@@ -103,7 +103,7 @@ class App extends Component {
         <ImageGallery images={images} onClick={this.onImageClick} />
         {showButton && (
           <div className="container">
-            <Button onClick={this.fetchImages} isLoading={isLoading}></Button>
+            <Button onClick={this.fetchImages} isLoading={isLoading} />
           </div>
         )}
       </>
